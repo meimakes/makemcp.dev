@@ -30,10 +30,42 @@
   
   * { margin: 0; padding: 0; box-sizing: border-box; }
   
+  :root {
+    --bg: #fafafa;
+    --text: #1a1a1a;
+    --tagline: #666;
+    --desc: #888;
+    --border: #e5e5e5;
+    --link: #1a1a1a;
+    --link-border: #ddd;
+    --link-hover-bg: #1a1a1a;
+    --link-hover-text: #fff;
+    --footer: #aaa;
+    --footer-link: #888;
+    --footer-hover: #1a1a1a;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111118;
+      --text: #e5e5e5;
+      --tagline: #888;
+      --desc: #777;
+      --border: #2a2a2a;
+      --link: #e5e5e5;
+      --link-border: #333;
+      --link-hover-bg: #e5e5e5;
+      --link-hover-text: #111;
+      --footer: #555;
+      --footer-link: #777;
+      --footer-hover: #e5e5e5;
+    }
+  }
+  
   body {
     font-family: 'Inter', sans-serif;
-    background: #fafafa;
-    color: #1a1a1a;
+    background: var(--bg);
+    color: var(--text);
     min-height: 100vh;
   }
   
@@ -64,7 +96,7 @@
   .tagline {
     margin-top: 16px;
     font-size: 1.1rem;
-    color: #666;
+    color: var(--tagline);
     max-width: 500px;
   }
   
@@ -79,10 +111,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 28px 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border);
   }
   
-  .server:first-child { border-top: 1px solid #e5e5e5; }
+  .server:first-child { border-top: 1px solid var(--border); }
   
   .server-info h2 {
     font-size: 1.2rem;
@@ -92,7 +124,7 @@
   
   .server-info p {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--desc);
   }
   
   .server-links {
@@ -103,18 +135,18 @@
   .server-links a {
     font-size: 0.8rem;
     font-weight: 500;
-    color: #1a1a1a;
+    color: var(--link);
     text-decoration: none;
     padding: 6px 14px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--link-border);
     border-radius: 6px;
     transition: all 0.15s;
   }
   
   .server-links a:hover {
-    background: #1a1a1a;
-    color: white;
-    border-color: #1a1a1a;
+    background: var(--link-hover-bg);
+    color: var(--link-hover-text);
+    border-color: var(--link-hover-bg);
   }
   
   .badge {
@@ -130,11 +162,11 @@
   footer {
     margin-top: 64px;
     font-size: 0.82rem;
-    color: #aaa;
+    color: var(--footer);
   }
   
-  footer a { color: #888; }
-  footer a:hover { color: #1a1a1a; }
+  footer a { color: var(--footer-link); }
+  footer a:hover { color: var(--footer-hover); }
   
   @media (max-width: 600px) {
     h1 { font-size: 2rem; }
