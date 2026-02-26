@@ -1,0 +1,26 @@
+# makemcp.dev
+
+> Open source MCP servers for AI agents. Built by @meimakes. All servers support dual transport (stdio + SSE).
+
+## Servers
+
+- [strava-mcp-server](https://github.com/meimakes/strava-mcp-server): Activities, routes, splits, and training data from Strava.
+- [hevy-mcp-server](https://github.com/meimakes/hevy-mcp-server): Workout history, personal records, and exercise details from Hevy.
+- [oura-mcp-server](https://github.com/meimakes/oura-mcp-server): Sleep, readiness, heart rate, and HRV from Oura Ring.
+- [amazon-mcp-server](https://github.com/meimakes/amazon-mcp-server): Search products, manage cart, and check order history from Amazon.
+
+## What Is MCP?
+
+MCP (Model Context Protocol) lets AI agents call external tools. These servers expose real-world data (fitness, sleep, shopping) to any MCP-compatible client like Claude Desktop, Poke, or OpenClaw.
+
+## Installation
+
+All servers install via npx:
+- `npx @meimakes/strava-mcp-server`
+- `npx @meimakes/hevy-mcp-server`
+- `npx @meimakes/oura-mcp-server`
+- `npx @meimakes/amazon-mcp-server`
+
+## Author
+
+[@meimakes](https://meimakes.com) · [The Undercurrent](https://www.theundercurrent.dev) · [GitHub](https://github.com/meimakes)

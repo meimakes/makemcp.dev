@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>makemcp.dev — MCP Servers That Actually Work</title>
+<meta name="description" content="Four open source MCP servers for AI agents. Strava, Hevy, Oura Ring, Amazon. Dual transport. Zero config headaches.">
+<link rel="canonical" href="https://makemcp.dev">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MCP servers that actually work.">
+<meta property="og:description" content="Four open source MCP servers for AI agents. Dual transport. Zero config headaches. Install and go.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://makemcp.dev">
+<meta property="og:image" content="https://makemcp.dev/og.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@meimakes">
+<meta name="twitter:title" content="MCP servers that actually work.">
+<meta name="twitter:description" content="Four open source MCP servers for AI agents. Dual transport. Zero config headaches.">
+<meta name="twitter:image" content="https://makemcp.dev/og.png">
+
+<!-- LLM Discovery -->
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM metadata">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fafafa;
+    color: #1a1a1a;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  
+  header {
+    margin-bottom: 64px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+  
+  h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, #FF4858, #FF8A5C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .tagline {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 500px;
+  }
+  
+  .servers {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .server {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .server:first-child { border-top: 1px solid #e5e5e5; }
+  
+  .server-info h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  
+  .server-info p {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .server-links {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .server-links a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.15s;
+  }
+  
+  .server-links a:hover {
+    background: #1a1a1a;
+    color: white;
+    border-color: #1a1a1a;
+  }
+  
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #FF4858;
+    margin-left: 8px;
+  }
+  
+  footer {
+    margin-top: 64px;
+    font-size: 0.82rem;
+    color: #aaa;
+  }
+  
+  footer a { color: #888; }
+  footer a:hover { color: #1a1a1a; }
+  
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .server { flex-direction: column; align-items: flex-start; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>MCP servers that <em>actually work.</em></h1>
+    <p class="tagline">Four open source servers for AI agents. Dual transport. Zero config headaches. Install and go.</p>
+  </header>
+  
+  <div class="servers">
+    <div class="server">
+      <div class="server-info">
+        <h2>strava-mcp-server <span class="badge">dual transport</span></h2>
+        <p>Activities, stats, and training data from Strava</p>
+      </div>
+      <div class="server-links">
+        <a href="https://github.com/meimakes/strava-mcp-server">GitHub</a>
+        <a href="https://github.com/meimakes/strava-mcp-server#installation">Install</a>
+      </div>
+    </div>
+    
+    <div class="server">
+      <div class="server-info">
+        <h2>hevy-mcp-server <span class="badge">dual transport</span></h2>
+        <p>Workout history, PRs, and exercises from Hevy</p>
+      </div>
+      <div class="server-links">
+        <a href="https://github.com/meimakes/hevy-mcp-server">GitHub</a>
+        <a href="https://github.com/meimakes/hevy-mcp-server#installation">Install</a>
+      </div>
+    </div>
+    
+    <div class="server">
+      <div class="server-info">
+        <h2>oura-mcp-server <span class="badge">dual transport</span></h2>
+        <p>Sleep, readiness, and heart rate from Oura Ring</p>
+      </div>
+      <div class="server-links">
+        <a href="https://github.com/meimakes/oura-mcp-server">GitHub</a>
+        <a href="https://github.com/meimakes/oura-mcp-server#installation">Install</a>
+      </div>
+    </div>
+    
+    <div class="server">
+      <div class="server-info">
+        <h2>amazon-mcp-server <span class="badge">dual transport</span></h2>
+        <p>Search, cart, and order history from Amazon</p>
+      </div>
+      <div class="server-links">
+        <a href="https://github.com/meimakes/amazon-mcp-server">GitHub</a>
+        <a href="https://github.com/meimakes/amazon-mcp-server#installation">Install</a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Built by <a href="https://meimakes.com">@meimakes</a> · Read <a href="https://www.theundercurrent.dev">The Undercurrent</a> for more on dev tools and AI</p>
+  </footer>
+</div>
+</body>
+</html>
